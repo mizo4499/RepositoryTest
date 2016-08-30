@@ -1,10 +1,7 @@
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.SocketException;
 
-import org.apache.commons.net.ftp.*;
+import org.apache.commons.net.ftp.FTPClient;
 
 public class main {
 
@@ -13,9 +10,9 @@ public class main {
 		String localPath = "C:\\temp\\upload";
 		String ipaddr = "192.168.11.101";
 		int port = 21;
-		String user = "civic";
-		String passwd = "civic";
-		String relativePath = "EI01_01_001_1/";
+		String user = "test";
+		String passwd = "test";
+		String relativePath = "test_dir/";
 		String tempExtension = ".tmp";
 
 		try {
